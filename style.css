@@ -157,23 +157,44 @@ h1 {
     text-align: center;
 }
 
-.product {
-    background: url(images/mens-category.jpg), url(images/trends-category.jpg), url(images/glasses-category.jpg), url(images/sale-category.jpg), url(images/bags-category.jpg), url(images/womens-category.jpg)
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    background:  url(images/trends-category.jpg), url(images/glasses-category.jpg), url(images/sale-category.jpg), url(images/bags-category.jpg), url(images/womens-category.jpg)
 }
 
-.product a {
+.mens li {
+    background: url(images/mens-category.jpg) no-repeat center;
+    background-size: cover, cover;
+	padding:20% 0;
+	flex: 1 0 50%;
+	border: 4px solid white;
+}
+
+.categories a {
     color: black;
     text-decoration: none;
     padding: 5px 20px 5px;
     display: inline;
 }
 
-.product li {
+.categories li {
     list-style: none;
     display: inline;
     text-transform: uppercase;
     text-align: center;
 }
+
+
+.products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
 
 h3 {
     color: #e2574c;
@@ -195,20 +216,33 @@ p {
 }
 
 .media a {
-    color: black;
+    color: white;
     padding: 5px 20px 5px;
     text-decoration: none;
-    display: inline;
+    display: block;
+    text-align: center;
 }
 
 .site-footer a {
+
     color: black;
     padding: 5px 20px 5px;
     height: 10px;
 }
 
 .media li {
+    display: flex;
+    align-items: flex-start;
     list-style: none;
     text-transform: uppercase;
     text-align: right;
+}
+.media li a:hover {
+    color: #b64036; }
+
+
+
+footer {
+    background-color: #242424;
+    color: white
 }
