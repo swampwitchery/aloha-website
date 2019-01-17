@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 @font-face {
@@ -135,6 +222,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo img {
@@ -147,14 +235,6 @@ body {
     height: 50px;
     flex: 1 0 20%;
     align-self: flex-end;
-}
-
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    max-width: 1240px;
-    margin: 0 auto;
 }
 
 h1,
@@ -195,16 +275,24 @@ h1 {
 }
 
 .banner p.collection {
-    text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
-    padding: 200px;
+    padding: 50px;
+    margin: auto;
 }
 
 .styles {
     text-align: center;
 }
 
+.handcrafted-styles{
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+}
 
 .categories {
     display: flex;
@@ -212,6 +300,57 @@ h1 {
 
 .mens {
     background: url(images/mens-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trends {
+    background-image: url("images/trends-category.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glasses {
+    background-image: url(images/glasses-category.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale {
+    background-image: url(images/sale-category.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bags {
+    background-image: url(images/bags-category.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.womens {
+    background-image: url(images/womens-category.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .categories a {
@@ -236,8 +375,6 @@ h3 {
 
 p {
     max-width: 1240px;
-    text-align: center;
-    margin: 0 auto;
 }
 
 .updates {
@@ -264,25 +401,45 @@ p {
     height: 10px;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 .media li {
     display: flex;
     align-items: flex-start;
     list-style: none;
-    text-transform: uppercase;
     text-align: right;
 }
 
 .media li a:hover {
-    color: #b64036; }
+    color: #b64036;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+}
 
 footer {
     background-color: #242424;
     color: white;
+    height: 200px
 }
 
-@media screen and (min-width: 480px) {
-   
-}
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {}
 
-}
+@media screen and (min-width: 600px) {}
