@@ -9,6 +9,7 @@
     <link href="fonts/PlayfairDisplay-Bold.ttf" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
 
     <section class="styles">
         <h2>
-            <span class="hand-craft">Hand-Crafted</span><span class="styling"> Styles</span>
+            <span class="hand-craft">Hand-Crafted</span><span class="style-bold"> Styles</span>
         </h2>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of
             products or sign up for updates below</p>
@@ -65,30 +66,54 @@
 
     <section class="products">
         <h2><span class="home-bold">Most-Loved</span><span class="products-bold"> Products</span></h2>
-        <div class=product-section>
-            <div>
-                <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
-                <p>dresses</p>
-                <h3>checked stretch dress</h3>
-                <p>$129.00</p>
+        <div class="product-section">
+            <div class="knit-dress">
+                <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress">
+                <p>Dresses</p>
+                <h3>Stretch Knit Dress</h3>
+                <p>$169.00</p>
             </div>
-            <div>
-                <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
-                <p>bag</p>
-                <h3>blue hipster backpack</h3>
-                <p>$69.00</p>
-            </div>
-            <div>
-                <img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
-                <p>denim</p>
-                <h3>denim overall shorts</h3>
+            <div class="blue-shirt">
+                <img src="images/cotton-blue-shirt.jpg" alt="stretch-knit-dress">
+                <p>Shirts</p>
+                <h3>Cotton Blue Shirt</h3>
                 <p>$89.00</p>
             </div>
-            <div>
+            <div class="checked-dress">
+                <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
+                <p>Dresses</p>
+                <h3>Checked Stretch Dress</h3>
+                <p>$129.00</p>
+            </div>
+            <div class="blue-backpack">
+                <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
+                <p>Bag</p>
+                <h3>Blue Hipster Backpack</h3>
+                <p>$69.00</p>
+            </div>
+            <div class="denim-shorts">
+                <img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
+                <p>Denim</p>
+                <h3>Denim Overall Shorts</h3>
+                <p>$89.00</p>
+            </div>
+            <div class="pink-dress">
                 <img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
-                <p>dresses</p>
-                <h3>pink dotted dress</h3>
+                <p>Dresses</p>
+                <h3>Pink Dotted Dress</h3>
                 <p>$99.00</p>
+            </div>
+            <div class="blue-dress">
+                <img src="images/blue-silk-dress.jpg" alt="blue-silk-dress">
+                <p>Dresses</p>
+                <h3>Blue Silk Dress</h3>
+                <p>$119.00</p>
+            </div>
+            <div class="yellow-shirt">
+                <img src="images/cotton-yellow-tshirt.jpg" alt="cotton-yellow-tshirt">
+                <p>Shirts</p>
+                <h3>Cotton Blue Shirt</h3>
+                <p>$39.00</p>
             </div>
         </div>
     </section>
@@ -112,7 +137,7 @@
                 <p> &copy; 2016 Aloha Apparel Co.
                     <br>Powered by HTML and CSS.
                 </p>
-                <p>604-604-6040. <a href="mailto: info@alohaapparel.com">info@alohaapparel.com</a>
+                <p class="email">604-604-6040. <a href="mailto: info@alohaapparel.com">info@alohaapparel.com</a>
                 </p>
                 <p class="address">1490 W Broadway
                     <br>Vancouver, BC, Canada
@@ -130,6 +155,7 @@
         </section>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/aloha.js"></script>
 </body>
 
