@@ -276,8 +276,9 @@ h3 {
 
 .banner p.collection {
     text-transform: uppercase;
-    padding: 50px;
+    padding: 10px;
     text-align: center;
+    min-height: 30px;
 }
 
 h1 {
@@ -292,8 +293,8 @@ h1 {
     justify-items: center;
     justify-content: center;
     margin-bottom: 10px auto;
-    background:
-        url(images/banner-girl.png) center top 60px no-repeat, 
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+        url(images/banner-girl.png) center top 80px no-repeat,
         url(images/flower-bkgd.jpg) repeat-x;
     background-size: auto 500px;
     color: white;
@@ -313,17 +314,22 @@ h2 {
 }
 
 .styles {
-    padding-top: 30px;
+    padding-top: 10px;
     margin: 10px auto;
     text-align: center;
     max-width: 50%;
     line-height: 2em;
+    padding-bottom: 10px;
 }
 
 /* <---- PRODUCT SECTION ---->*/
 
-.categories{
+.categories {
     text-align: center;
+    width: 1240px;
+    height: 300px;
+    display: block;
+    margin: auto;
 }
 
 .product-categories-left {
@@ -339,8 +345,9 @@ h2 {
 }
 
 .mens {
-    background: 
-    url("images/mens-category.jpg") center center no-repeat;    height: 145px;
+    background:
+        url("images/mens-category.jpg") center center no-repeat;
+    height: 145px;
     max-width: 100%;
     position: relative;
     flex: 1 0 50%;
@@ -349,8 +356,8 @@ h2 {
 }
 
 .trends {
-    background: 
-    url("images/trends-category.jpg") center center no-repeat;
+    background:
+        url("images/trends-category.jpg") center center no-repeat;
     height: 145px;
     max-width: 100%;
     position: relative;
@@ -360,8 +367,8 @@ h2 {
 }
 
 .glasses {
-    background: 
-    url("images/glasses-category.jpg") center center no-repeat;
+    background:
+        url("images/glasses-category.jpg") center center no-repeat;
     height: 145px;
     max-width: 100%;
     position: relative;
@@ -371,8 +378,8 @@ h2 {
 }
 
 .sale {
-    background: 
-    url("images/sale-category.jpg") center center no-repeat;
+    background:
+        url("images/sale-category.jpg") center center no-repeat;
     background-size: cover;
     height: 145px;
     max-width: 100%;
@@ -383,8 +390,8 @@ h2 {
 }
 
 .bags {
-    background:  
-    url("images/bags-category.jpg") center center no-repeat;
+    background:
+        url("images/bags-category.jpg") center center no-repeat;
     height: 145px;
     max-width: 100%;
     position: relative;
@@ -394,8 +401,8 @@ h2 {
 }
 
 .womens {
-    background:  
-    url("images/womens-category.jpg") center center no-repeat;
+    background:
+        url("images/womens-category.jpg") center center no-repeat;
     height: 145px;
     max-width: 100%;
     position: relative;
@@ -446,7 +453,7 @@ h3 {
     justify-items: flex-start;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     background: url(images/wave-bkgd.jpg) no-repeat bottom;
     height: 340px;
     color: white;
@@ -474,8 +481,6 @@ h3 {
     width: 250px;
     padding: 5px;
 }
-
-
 
 .email-sub {
     width: 200px;
@@ -555,6 +560,12 @@ footer {
     padding: 40px 40px;
 }
 
-@media screen and (min-width: 480px) {}
+@media screen and (min-width: 480px) {
+hr{
+    display: none;
+}
+}
 
-@media screen and (min-width: 600px) {}
+@media screen and (min-width: 600px) {
+
+}
