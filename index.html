@@ -17,6 +17,9 @@
         <div class="logo">
             <img src="images/aloha-logo.svg" alt="aloha-logo">
         </div>
+        <div class="cart">
+                <img src="images/cart-icon.svg" alt="cart-icon">
+            </div>
         <nav class="main-navigation">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -25,17 +28,17 @@
                 <li><a href="#updates">Updates</a></li>
             </ul>
         </nav>
-        <div class="cart">
-            <img src="images/cart-icon.svg" alt="cart-icon">
-        </div>
+
     </header>
 
     <section class="banner">
-        <p class="collection"> New Collection</p>
-        <h1 class="seasons">Spring/Summer 2016</h1>
+        <div class="banner-text">
+            <p class="collection"> New Collection</p>
+            <h1 class="seasons">Spring/Summer 2016</h1>
+        </div>
     </section>
 
-    <section class="styles">
+    <section class="styles" id="about">
         <h2>
             <span class="hand-craft">Hand-Crafted</span><span class="style-bold"> Styles</span>
         </h2>
@@ -43,28 +46,33 @@
             products or sign up for updates below</p>
     </section>
 
-    <section class="categories">
-        <div class="mens">
-            <span>Men's</span>
+    <section class="categories" id="products">
+        <div class="product-categories-left">
+            <div class="mens">
+                <span class="male">Men's</span>
+            </div>
+            <div class="trends">
+                <span class="trendy">Trends</span>
+            </div>
+            <div class="glasses">
+                <span class="glass">Glasses</span>
+            </div>
         </div>
-        <div class="trends">
-            <span>Trends</span>
+        <div class="product-categories-right">
+            <div class="sale">
+                <span class="stuff-sale">Sale</span>
+            </div>
+            <div class="bags">
+                <span class="handbags">Bags</span>
+            </div>
+            <div class="womens">
+                <span class="female">Women's</span>
+            </div>
         </div>
-        <div class="glasses">
-            <span>Glasses</span>
-        </div>
-        <div class="sale">
-            <span>Sale</span>
-        </div>
-        <div class="bags">
-            <span>Bags</span>
-        </div>
-        <div class="womens">
-            <span>Women's</span>
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="featured">
         <h2><span class="home-bold">Most-Loved</span><span class="products-bold"> Products</span></h2>
         <div class="product-section">
             <div class="knit-dress">
@@ -125,9 +133,8 @@
         <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
             style
             tips from our blog. Unsubscribe any time.</p>
-        <form action="submit" method="get">
-            <input type="email" id="email" placeholder="Your email">
-            <button type="submit" name="subscribe" value="Subscribe">Subscribe</button>
+        <form action="submit" method="get" class="your-email">            <input type="text" class="email-sub" placeholder="Your email">
+            <button class="button" name="subscribe" value="Subscribe">Subscribe</button>
         </form>
     </section>
 
