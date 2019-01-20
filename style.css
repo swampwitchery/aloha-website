@@ -228,7 +228,7 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 20px auto;
+    padding: 10px 20px;
 
 }
 
@@ -236,20 +236,17 @@ body {
     height: 50px;
     padding-left: 50px;
     flex: 1 0 50%;
-    order: 1;
 }
 
 .cart img {
     padding-right: 50px;
+    text-align: right;
     height: 50px;
-    flex: 1 0 50%;
-    align-self: flex-end;
-    order: 1;
-}
+    flex: 1 0 50%;}
 
 .main-navigation {
-    order: 2;
-    flex: 1 0 100%;
+    flex: 1 0 auto;
+    align-self: center;
 }
 
 .main-navigation li {
@@ -258,7 +255,6 @@ body {
     text-transform: uppercase;
     text-align: center;
     padding: 20px;
-    align-self: center;
 }
 
 .main-navigation a {
@@ -346,8 +342,9 @@ h2 {
 
 .mens {
     background:
-        url("images/mens-category.jpg") center center no-repeat;
-    height: 145px;
+        url("images/mens-category.jpg") center no-repeat;
+        background-size: cover,cover;
+        height: 145px;
     max-width: 100%;
     position: relative;
     flex: 1 0 50%;
@@ -357,8 +354,9 @@ h2 {
 
 .trends {
     background:
-        url("images/trends-category.jpg") center center no-repeat;
-    height: 145px;
+        url("images/trends-category.jpg") center no-repeat;
+        background-size: cover,cover;
+        height: 145px;
     max-width: 100%;
     position: relative;
     flex: 1 0 25%;
@@ -368,8 +366,9 @@ h2 {
 
 .glasses {
     background:
-        url("images/glasses-category.jpg") center center no-repeat;
-    height: 145px;
+        url("images/glasses-category.jpg") center no-repeat;
+        background-size: cover,cover;
+        height: 145px;
     max-width: 100%;
     position: relative;
     flex: 1 0 25%;
@@ -379,8 +378,8 @@ h2 {
 
 .sale {
     background:
-        url("images/sale-category.jpg") center center no-repeat;
-    background-size: cover;
+        url("images/sale-category.jpg") center no-repeat;
+    background-size: cover,cover;
     height: 145px;
     max-width: 100%;
     position: relative;
@@ -391,8 +390,9 @@ h2 {
 
 .bags {
     background:
-        url("images/bags-category.jpg") center center no-repeat;
-    height: 145px;
+        url("images/bags-category.jpg") center no-repeat;
+        background-size: cover,cover;
+        height: 145px;
     max-width: 100%;
     position: relative;
     flex: 1 0 25%;
@@ -402,8 +402,9 @@ h2 {
 
 .womens {
     background:
-        url("images/womens-category.jpg") center center no-repeat;
-    height: 145px;
+        url("images/womens-category.jpg") center no-repeat;
+        background-size: cover,cover;
+        height: 145px;
     max-width: 100%;
     position: relative;
     flex: 1 0 50%;
@@ -537,7 +538,7 @@ h3 {
     padding: 5px 20px;
     text-decoration: none;
     display: block;
-    text-align: center;
+    font-weight: normal;
 }
 
 
@@ -567,5 +568,13 @@ hr{
 }
 
 @media screen and (min-width: 600px) {
-
+.logo img{
+    order: 1;
+}
+.main-navigation{
+    order: 2;
+}
+.cart {
+    order: 3;
+}
 }
