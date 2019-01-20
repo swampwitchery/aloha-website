@@ -26,5 +26,6 @@ $('.product-section').flickity({
         }
       }
     });
+    
   });
 
