@@ -319,6 +319,13 @@ h2 {
 
 /* <---- PRODUCT SECTION ---->*/
 
+.categories a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
 .categories {
     text-align: center;
     width: 1240px;
@@ -409,6 +416,7 @@ h2 {
     flex: 1 0 50%;
     order: 2;
     text-align: center;
+    
 }
 
 
