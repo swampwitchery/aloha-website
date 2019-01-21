@@ -341,14 +341,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.categories {
-  text-align: center;
-  /* width: 1240px; */
-  /* height: 300px; */
-  display: block;
-  margin: auto;
-}
-
 .product-section {
   text-align: center;
 }
@@ -359,7 +351,6 @@ h2 {
 
 .product-categories {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -372,49 +363,49 @@ h2 {
 }
 
 .mens {
-  background: url("images/mens-category.jpg") center no-repeat;
-  background-size: cover, contain;
+  background: url("images/mens-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
   border: 4px solid white;
-  height: 145px;
+  height: 200px;
   max-width: 100%;
   position: relative;
   flex: 1 0 100%;
   order: 1;
   text-align: center;
-  line-height: 145px;
+  line-height: 200px;
 }
 
 .trends {
-  background: url("images/trends-category.jpg") center no-repeat;
+  background: url("images/trends-category.jpg") no-repeat 50%;
   border: 4px solid white;
   background-size: cover, cover;
-  height: 145px;
+  height: 200px;
   max-width: 100%;
   position: relative;
   flex: 1 0 50%;
   order: 1;
   text-align: center;
-  line-height: 145px;
+  line-height: 200px;
 }
 
 .glasses {
-  background: url("images/glasses-category.jpg") center no-repeat;
+  background: url("images/glasses-category.jpg") no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid white;
-  height: 145px;
+  height: 200px;
   max-width: 100%;
   position: relative;
   flex: 1 0 50%;
   order: 1;
   text-align: center;
-  line-height: 145px;
+  line-height: 200px;
 }
 
 .sale {
-  background: url("images/sale-category.jpg") center no-repeat;
+  background: url("images/sale-category.jpg") no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid white;
-  height: 145px;
+  height: 200px;
   max-width: 100%;
   position: relative;
   flex: 1 0 50%;
@@ -423,29 +414,29 @@ h2 {
 }
 
 .bags {
-  background: url("images/bags-category.jpg") center no-repeat;
+  background: url("images/bags-category.jpg") no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid white;
-  height: 145px;
+  height: 200px;
   max-width: 100%;
   position: relative;
   flex: 1 0 50%;
   order: 2;
   text-align: center;
-  line-height: 145px;
+  line-height: 200px;
 }
 
 .womens {
-  background: url("images/womens-category.jpg") center no-repeat;
+  background: url("images/womens-category.jpg") no-repeat 50%;
   background-size: cover, cover;
   border: 4px solid white;
-  height: 145px;
+  height: 200px;
   max-width: 100%;
   position: relative;
   flex: 1 0 100%;
   order: 2;
   text-align: center;
-  line-height: 145px;
+  line-height: 200px;
 }
 
 /* <----- UPDATES / EMAIL -----> */
@@ -590,10 +581,21 @@ footer {
 
 /*<---- MEDIA STUFF---->*/
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
+  .mens,
+  .womens {
+    flex: 1 0 50%;
+  }
+
+  .trends,
+  .glasses,
+  .bags,
+  .sale {
+    flex: 1 0 25%;
+  }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1240px) {
   /* <---- HEADER ----> */
 
   .logo img {
@@ -619,5 +621,19 @@ footer {
 
   .seasons {
     font-size: 60px;
+  }
+
+  .mens,
+  .womens {
+    flex: 1 0 50%;
+    height: 400px;
+  }
+
+  .trends,
+  .glasses,
+  .bags,
+  .sale {
+    flex: 1 0 25%;
+    height: 400px;
   }
 }
