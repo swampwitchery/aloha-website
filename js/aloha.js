@@ -24,8 +24,8 @@ $('.product-section').flickity({
           }, 1000);
           return false;
         }
-      }
+      }    const sEmail = $(".email").val();
+
     });
-    
   });
 

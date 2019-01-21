@@ -7,3 +7,5 @@ as part of the Web Development Program at RED Academy.
 - CSS
 - Responsive web design
 - Git
+- JavaScript
+- jQuery
