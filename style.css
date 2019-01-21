@@ -520,15 +520,6 @@ h3 {
   color: white;
 }
 
-.contact {
-  font-family: "Playfair Display";
-  line-height: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
 .address {
   display: flex;
   flex-direction: column;
@@ -539,9 +530,18 @@ h3 {
 
 /* <---- FOOTER --->*/
 
+.media {
+
+}
+
+.media ul li span{
+display: none;
+}
+
 .media li {
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
   list-style: none;
   text-align: right;
 }
@@ -559,10 +559,14 @@ h3 {
   color: #b64036;
 }
 
-.container {
+.contact {
+  font-family: "Playfair Display";
+  line-height: 20px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container {
   margin: 0 auto;
 }
 
@@ -574,7 +578,6 @@ h3 {
 footer {
   background-color: #242424;
   color: white;
-  height: 150px;
   padding: 40px 40px;
 }
 
