@@ -230,7 +230,7 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 .logo img {
@@ -263,6 +263,7 @@ body {
   flex: 1 0 50%;
   color: #e2574c;
   text-decoration: none;
+  font-size: 1rem;
   display: inline;
 }
 
@@ -270,7 +271,7 @@ body {
 
 h1 {
   font-family: "Playfair Display";
-  font-size: 60px;
+  font-size: 40px;
   align-items: center;
 }
 
@@ -287,20 +288,19 @@ h1 {
   flex-direction: column;
   justify-items: center;
   justify-content: center;
-  margin-bottom: 10px 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(images/banner-girl.png) center top 80px no-repeat,
+    url(images/banner-girl.png) center top 30px no-repeat,
     url(images/flower-bkgd.jpg) repeat-x;
-  background-size: auto 500px;
+  background-size: auto 400px;
   color: white;
-  height: 500px;
+  height: 400px;
 }
 
 .styles {
   padding-top: 10px;
   margin: 10px auto;
   text-align: center;
-  max-width: 40%;
+  max-width: 80%;
   line-height: 2em;
   padding-bottom: 40px;
 }
@@ -308,7 +308,7 @@ h1 {
 /* <---- PRODUCT SECTION / FLICKITY ---->*/
 
 h2 {
-  font-size: 1.5em;
+  font-size: 3rem;
   margin-block-end: 0.83em;
   font-family: "Playfair Display";
   font-weight: normal;
@@ -478,18 +478,20 @@ h3 {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
-  background: url(images/wave-bkgd.jpg) no-repeat bottom;
-  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(images/wave-bkgd.jpg) no-repeat bottom;
+  height: 350px;
   color: white;
   text-align: center;
   background-color: #d7d7d7;
 }
 
 .updates p {
-  max-width: 40%;
+  max-width: 80%;
   margin: 10px auto;
   text-align: center;
   line-height: 2em;
+  font-size: 1rem;
   font-weight: 300;
   font-style: normal;
 }
@@ -520,43 +522,12 @@ h3 {
   color: white;
 }
 
-.address {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  color: #969696;
-}
-
 /* <---- FOOTER --->*/
 
-.media {
-
-}
-
-.media ul li span{
-display: none;
-}
-
-.media li {
+.contact-us {
   display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  list-style: none;
-  text-align: right;
-}
-
-.media a {
-  color: white;
-  padding: 8px 20px;
-  text-decoration: none;
-  display: block;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.media li a:hover {
-  color: #b64036;
+  flex-direction: column;
+  font-size: 14px;
 }
 
 .contact {
@@ -566,8 +537,8 @@ display: none;
   flex-direction: column;
 }
 
-.container {
-  margin: 0 auto;
+.copyright {
+  margin: 10px 10px;
 }
 
 .email a {
@@ -575,21 +546,56 @@ display: none;
   color: white;
 }
 
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #969696;
+  margin: 10px 10px;
+}
+
+.media {
+  margin: 10px;
+}
+
+.media ul li span {
+  display: none;
+}
+
+.media li {
+  display: inline-block;
+  /* align-items: flex-start;
+  flex-direction: row; */
+  list-style: none;
+  text-align: center;
+}
+
+.media a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  padding: 8px 20px;
+}
+
+.media li a:hover {
+  color: #b64036;
+}
+
 footer {
   background-color: #242424;
   color: white;
   padding: 40px 40px;
+  text-align: center;
 }
 
 /*<---- MEDIA STUFF---->*/
 
 @media screen and (min-width: 480px) {
-  hr {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 600px) {
+  /* <---- HEADER ----> */
+
   .logo img {
     order: 1;
   }
@@ -598,5 +604,20 @@ footer {
   }
   .cart {
     order: 3;
+  }
+
+  hr {
+    display: none;
+  }
+
+  /* <---- BANNER ----> */
+
+  .banner {
+    height: 500px;
+    background-size: cover, 250px, contain;
+  }
+
+  .seasons {
+    font-size: 60px;
   }
 }
