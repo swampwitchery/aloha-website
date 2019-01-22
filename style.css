@@ -513,6 +513,7 @@ h3 {
 
 .contact-us {
   font-size: 14px;
+
 }
 
 .contact {
@@ -600,22 +601,78 @@ footer {
 
   .site-header{
     flex-wrap: nowrap;
+    padding: 20px 80px;
+
   }
 
   /* <---- FOOTER ----> */
 
-  footer {
-    padding: 10px 10px;
+  .contact-us {
     display: flex;
-    justify-content: space-between;
     text-align: left;
-  }
+    justify-content: space-between;
+    flex-direction: row;    
+    margin: 0 auto;
+    width: 100%;
+    font-size: 14px;
+}
+
+.contact {
+    font-family: "Playfair Display";
+    line-height: 20px;
+    width: 50%;
+}
+
+.copyright {
+/*  margin: 10px 10px;*/
+}
+
+
+.address {
+/*  justify-content: space-between;*/
+/*  margin: 10px 10px;*/
+}
+
+.media {
+    display: flex;
+    justify-content: left;
+    width: 50%;
+/*    margin: 10px;*/
+}
+
+.media ul li span {
+/* display: none @media query */
+  /* display: inherit; */
+  display: flex;
+}
+
+.media li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+}
+
+.media a {
+  text-decoration: none;
+  color: white;
+text-align: justify
+}
+
+.media li a:hover {
+  color: #b64036;
+}
+
+footer {
+  background-color: #242424;
+  color: white;
+  padding: 40px 40px;
+  text-align: center;
+}
+}
 
 
 @media screen and (min-width: 1240px) {
-
-
-
 
   /* <---- BANNER ----> */
 
@@ -641,4 +698,5 @@ footer {
     flex: 1 0 25%;
     height: 400px;
   }
+
 }
