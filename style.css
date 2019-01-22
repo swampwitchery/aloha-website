@@ -511,11 +511,8 @@ h3 {
 
 /* <---- FOOTER --->*/
 
-
-
 .contact-us {
   font-size: 14px;
-
 }
 
 .contact {
@@ -523,8 +520,13 @@ h3 {
   line-height: 20px;
 }
 
-.copyright {
-    line-height:30px;
+/* .copyright {
+  line-height: 30px;
+} */
+
+.email {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .email a {
@@ -571,8 +573,7 @@ footer {
 /*<---- MEDIA STUFF---->*/
 
 @media screen and (min-width: 600px) {
-
-/* <---- HEADER ----> */
+  /* <---- HEADER ----> */
 
   .logo img {
     order: 1;
@@ -600,10 +601,20 @@ footer {
     flex: 1 0 25%;
   }
 
-  .site-header{
+  .site-header {
     flex-wrap: nowrap;
     padding: 20px 80px;
+  }
 
+
+  /* <---- IN THE BODY ----> */
+
+  .styles {
+    max-width: 40%;
+  }
+
+  .updates p {
+    max-width: 40%;
   }
 
   /* <---- FOOTER ----> */
@@ -612,59 +623,57 @@ footer {
     display: flex;
     text-align: left;
     justify-content: space-between;
-    flex-direction: row;    
-    margin: 0 auto;
+    flex-direction: row;
+    /* margin: 0 auto; */
     width: 100%;
     font-size: 16px;
-}
+  }
 
-.contact {
-    font-family: "Playfair Display";
-    line-height: 20px;
+  .contact {
+    /* line-height: 20px; */
     width: 50%;
-    padding-top:20px;
-}
+    padding-top: 20px;
+    /* padding-left: 30px; */
+  }
 
+  .media ul li span {
+    display: flex;
+  }
 
-.media ul li span {
-/* display: none @media query */
-  /* display: inherit; */
-  display: flex;
-}
+  .media li {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+  }
 
-.media li {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  text-align: left;
-}
+  .media a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+  }
 
-.media a {
-  display: flex;
-  text-decoration: none;
-  color: white;
-text-align: justify
-}
+  .media li a:hover {
+    color: #b64036;
+  }
 
-.media li a:hover {
-  color: #b64036;
-}
+  footer {
+    background-color: #242424;
+    color: white;
+    padding: 40px 40px;
+    text-align: center;
+  }
 
-footer {
-  background-color: #242424;
-  color: white;
-  padding: 40px 40px;
-  text-align: center;
+  .social {
+    display: none;
+  }
 }
-
-.social{
-  display:none;
-}
-}
-
 
 @media screen and (min-width: 1240px) {
-
   /* <---- BANNER ----> */
 
   .banner {
@@ -682,7 +691,6 @@ footer {
     height: 400px;
   }
 
-
   .trends,
   .glasses,
   .bags,
@@ -690,15 +698,14 @@ footer {
     flex: 1 0 25%;
     height: 400px;
   }
-
 }
 
 .social {
-    min-width:25px;
+  min-width: 25px;
 }
 
-.container{
-    justify-content: space-between;
-    display:flex;
-    margin:0px 30px 00px 30px;
+.container {
+  justify-content: space-between;
+  display: flex;
+  margin: 0px 30px 00px 30px;
 }
