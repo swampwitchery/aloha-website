@@ -296,6 +296,19 @@ h1 {
   height: 400px;
 }
 
+.banner-text {
+  text-shadow: 2px 2px #808080;
+}
+
+/* <---- HEADER FOR PRODUCT SECTION / FLICKITY ---->*/
+
+h2 {
+  font-size: 3rem;
+  margin-block-end: 0.83em;
+  font-family: "Playfair Display";
+  font-weight: normal;
+}
+
 .styles {
   padding-top: 10px;
   margin: 10px auto;
@@ -307,11 +320,97 @@ h1 {
 
 /* <---- PRODUCT SECTION / FLICKITY ---->*/
 
-h2 {
-  font-size: 3rem;
-  margin-block-end: 0.83em;
-  font-family: "Playfair Display";
-  font-weight: normal;
+.wide-category {
+  width: 50%;
+}
+
+.narrow-category {
+  width: 25%;
+}
+
+.mens {
+  background: url("images/mens-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  border: 4px solid white;
+  text-shadow: 2px 2px #808080;
+  height: 200px;
+  max-width: 100%;
+  position: relative;
+  flex: 1 0 100%;
+  order: 1;
+  text-align: center;
+  line-height: 400px;
+}
+
+.trends {
+  background: url("images/trends-category.jpg") no-repeat 50%;
+  border: 4px solid white;
+  text-shadow: 2px 2px #808080;
+  background-size: cover, cover;
+  height: 200px;
+  max-width: 100%;
+  position: relative;
+  flex: 1 0 50%;
+  order: 1;
+  text-align: center;
+  line-height: 400px;
+}
+
+.glasses {
+  background: url("images/glasses-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  border: 4px solid white;
+  text-shadow: 2px 2px #808080;
+  height: 200px;
+  max-width: 100%;
+  position: relative;
+  flex: 1 0 50%;
+  order: 1;
+  text-align: center;
+  line-height: 400px;
+}
+
+.sale {
+  background: url("images/sale-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  border: 4px solid white;
+  text-shadow: 2px 2px #808080;
+  height: 200px;
+  max-width: 100%;
+  position: relative;
+  flex: 1 0 50%;
+  order: 2;
+  text-align: center;
+  line-height: 400px;
+
+}
+
+.bags {
+  background: url("images/bags-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  border: 4px solid white;
+  text-shadow: 2px 2px #808080;
+  height: 200px;
+  max-width: 100%;
+  position: relative;
+  flex: 1 0 50%;
+  order: 2;
+  text-align: center;
+  line-height: 400px;
+}
+
+.womens {
+  background: url("images/womens-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  border: 4px solid white;
+  text-shadow: 2px 2px #808080;
+  height: 200px;
+  max-width: 100%;
+  position: relative;
+  flex: 1 0 100%;
+  order: 2;
+  text-align: center;
+  line-height: 400px;
 }
 
 .products {
@@ -332,9 +431,11 @@ h2 {
 
 .categories a {
   text-decoration: none;
+  text-align: center;
   color: white;
   font-size: 2em;
   text-transform: uppercase;
+  
 }
 
 .product-section {
@@ -350,90 +451,7 @@ h2 {
   flex-wrap: wrap;
 }
 
-.wide-category {
-  width: 50%;
-}
 
-.narrow-category {
-  width: 25%;
-}
-
-.mens {
-  background: url("images/mens-category.jpg") no-repeat 50%;
-  background-size: cover, cover;
-  border: 4px solid white;
-  height: 200px;
-  max-width: 100%;
-  position: relative;
-  flex: 1 0 100%;
-  order: 1;
-  text-align: center;
-  line-height: 200px;
-}
-
-.trends {
-  background: url("images/trends-category.jpg") no-repeat 50%;
-  border: 4px solid white;
-  background-size: cover, cover;
-  height: 200px;
-  max-width: 100%;
-  position: relative;
-  flex: 1 0 50%;
-  order: 1;
-  text-align: center;
-  line-height: 200px;
-}
-
-.glasses {
-  background: url("images/glasses-category.jpg") no-repeat 50%;
-  background-size: cover, cover;
-  border: 4px solid white;
-  height: 200px;
-  max-width: 100%;
-  position: relative;
-  flex: 1 0 50%;
-  order: 1;
-  text-align: center;
-  line-height: 200px;
-}
-
-.sale {
-  background: url("images/sale-category.jpg") no-repeat 50%;
-  background-size: cover, cover;
-  border: 4px solid white;
-  height: 200px;
-  max-width: 100%;
-  position: relative;
-  flex: 1 0 50%;
-  order: 2;
-  text-align: center;
-}
-
-.bags {
-  background: url("images/bags-category.jpg") no-repeat 50%;
-  background-size: cover, cover;
-  border: 4px solid white;
-  height: 200px;
-  max-width: 100%;
-  position: relative;
-  flex: 1 0 50%;
-  order: 2;
-  text-align: center;
-  line-height: 200px;
-}
-
-.womens {
-  background: url("images/womens-category.jpg") no-repeat 50%;
-  background-size: cover, cover;
-  border: 4px solid white;
-  height: 200px;
-  max-width: 100%;
-  position: relative;
-  flex: 1 0 100%;
-  order: 2;
-  text-align: center;
-  line-height: 200px;
-}
 
 /* <----- UPDATES / EMAIL -----> */
 
@@ -612,6 +630,16 @@ footer {
   .styles {
     max-width: 40%;
   }
+
+  .product-section img {
+    max-width: 280px;
+  }
+
+  .products{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+}
 
   .updates p {
     max-width: 40%;
