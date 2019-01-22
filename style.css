@@ -323,10 +323,6 @@ h2 {
   text-align: center;
 }
 
-.product-container {
-  width: 100%;
-}
-
 .products p {
   text-align: center;
   text-transform: uppercase;
@@ -516,16 +512,12 @@ h3 {
 /* <---- FOOTER --->*/
 
 .contact-us {
-  display: flex;
-  flex-direction: column;
   font-size: 14px;
 }
 
 .contact {
   font-family: "Playfair Display";
   line-height: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .copyright {
@@ -538,8 +530,6 @@ h3 {
 }
 
 .address {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   color: #969696;
   margin: 10px 10px;
@@ -555,14 +545,11 @@ h3 {
 
 .media li {
   display: inline-block;
-  /* align-items: flex-start;
-  flex-direction: row; */
   list-style: none;
   text-align: center;
 }
 
 .media a {
-  display: flex;
   text-decoration: none;
   color: white;
   padding: 8px 20px;
@@ -582,21 +569,8 @@ footer {
 /*<---- MEDIA STUFF---->*/
 
 @media screen and (min-width: 600px) {
-  .mens,
-  .womens {
-    flex: 1 0 50%;
-  }
 
-  .trends,
-  .glasses,
-  .bags,
-  .sale {
-    flex: 1 0 25%;
-  }
-}
-
-@media screen and (min-width: 1240px) {
-  /* <---- HEADER ----> */
+/* <---- HEADER ----> */
 
   .logo img {
     order: 1;
@@ -611,6 +585,37 @@ footer {
   hr {
     display: none;
   }
+
+  .mens,
+  .womens {
+    flex: 1 0 50%;
+  }
+
+  .trends,
+  .glasses,
+  .bags,
+  .sale {
+    flex: 1 0 25%;
+  }
+
+  .site-header{
+    flex-wrap: nowrap;
+  }
+
+  /* <---- FOOTER ----> */
+
+  footer {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+
+@media screen and (min-width: 1240px) {
+
+
+
 
   /* <---- BANNER ----> */
 
