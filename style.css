@@ -265,7 +265,7 @@ body {
 
 .main-navigation a {
   flex: 1 0 50%;
-  color: #e2574c;
+  color: #db3a26;
   text-decoration: none;
   font-size: 1rem;
   display: inline;
@@ -470,7 +470,7 @@ h2 {
 }
 
 h3 {
-  color: #e2574c;
+  color: #db3a26;
   text-align: center;
   margin: 20px auto;
   font-size: 20px;
