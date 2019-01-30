@@ -1,4 +1,10 @@
 $(function () {
+  $("a[href^='#']").not("a[href='#']").click(function () {
+    $("#" + $(this).attr("href").slice(1) + "").focus();
+  });
+});
+
+$(function () {
   $('.product-section').flickity({
     draggable: true,
     freeScroll: true,
@@ -55,9 +61,3 @@ function validateEmail(sEmail) {
     return false;
   }
 }
-
-$(function () {
-  $("a[href^='#']").not("a[href='#']").click(function () {
-    $("#" + $(this).attr("href").slice(1) + "").focus();
-  });
-});
