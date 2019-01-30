@@ -222,6 +222,10 @@ body {
   margin: 0 auto;
 }
 
+#main[tabindex="-1"]:focus {
+  outline: 0;
+}
+
 /* <---- SITE HEADER AREA ---> */
 
 .site-header {
@@ -301,10 +305,6 @@ h1 {
 }
 
 /* <---- HEADER FOR PRODUCT SECTION / FLICKITY ---->*/
-
-#main[tabindex="-1"]:focus {
-  outline: 0;
-}
 
 h2 {
   font-size: 3rem;
@@ -386,7 +386,6 @@ h2 {
   order: 2;
   text-align: center;
   line-height: 400px;
-
 }
 
 .bags {
@@ -439,7 +438,6 @@ h2 {
   color: white;
   font-size: 2em;
   text-transform: uppercase;
-  
 }
 
 .product-section {
@@ -454,8 +452,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-
-
 
 /* <----- UPDATES / EMAIL -----> */
 
@@ -626,7 +622,6 @@ footer {
     padding: 20px 80px;
   }
 
-
   /* <---- IN THE BODY ----> */
 
   .styles {
@@ -637,11 +632,11 @@ footer {
     max-width: 280px;
   }
 
-  .products{
+  .products {
     margin: 0 auto;
     width: 100%;
     max-width: 1240px;
-}
+  }
 
   .updates p {
     max-width: 40%;
@@ -739,8 +734,6 @@ footer {
   display: flex;
   margin: 0px 30px 00px 30px;
 }
-
-
 
 /* <---- Screen Reader ----> */
 .screen-reader-text {
