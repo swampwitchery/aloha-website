@@ -302,6 +302,10 @@ h1 {
 
 /* <---- HEADER FOR PRODUCT SECTION / FLICKITY ---->*/
 
+#main[tabindex="-1"]:focus {
+  outline: 0;
+}
+
 h2 {
   font-size: 3rem;
   margin-block-end: 0.83em;
@@ -734,4 +738,25 @@ footer {
   justify-content: space-between;
   display: flex;
   margin: 0px 30px 00px 30px;
+}
+
+
+
+/* <---- Screen Reader ----> */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
 }
