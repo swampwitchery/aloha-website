@@ -222,7 +222,7 @@ body {
   margin: 0 auto;
 }
 
-#main[tabindex="-1"]:focus {
+main[tabindex="-1"]:focus {
   outline: 0;
 }
 
